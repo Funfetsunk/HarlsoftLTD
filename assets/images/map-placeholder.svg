@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400">
-  <rect width="800" height="400" fill="#e8ecf0"/>
-  <rect x="0" y="190" width="800" height="4" fill="#c5cdd6"/>
-  <rect x="390" y="0" width="4" height="400" fill="#c5cdd6"/>
-  <rect x="100" y="80" width="120" height="60" rx="4" fill="#d1d9e6"/>
-  <rect x="300" y="220" width="80" height="50" rx="4" fill="#d1d9e6"/>
-  <rect x="550" y="120" width="150" height="80" rx="4" fill="#d1d9e6"/>
-  <circle cx="400" cy="200" r="16" fill="#c0392b"/>
-  <circle cx="400" cy="200" r="8" fill="#ffffff"/>
+  <rect width="800" height="400" fill="#e8ecf0"></rect>
+  <rect x="0" y="190" width="800" height="4" fill="#c5cdd6"></rect>
+  <rect x="390" y="0" width="4" height="400" fill="#c5cdd6"></rect>
+  <rect x="100" y="80" width="120" height="60" rx="4" fill="#d1d9e6"></rect>
+  <rect x="300" y="220" width="80" height="50" rx="4" fill="#d1d9e6"></rect>
+  <rect x="550" y="120" width="150" height="80" rx="4" fill="#d1d9e6"></rect>
+  <circle cx="400" cy="200" r="16" fill="#c0392b"></circle>
+  <circle cx="400" cy="200" r="8" fill="#ffffff"></circle>
 </svg>
