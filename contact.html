@@ -34,7 +34,8 @@
     </header>
 
     <main id="main-content">
-      <section class="section">
+
+      <section class="section section--sm section--surface">
         <div class="container">
           <div class="section__header">
             <span class="section__eyebrow">Get in Touch</span>
@@ -43,6 +44,101 @@
           </div>
         </div>
       </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="contact-layout">
+
+            <div class="contact-form-col">
+              <h2 class="contact-form-heading">Send Us a Message</h2>
+              <p class="contact-form-intro">Fill in the form below and a member of our team will be in touch within two business days.</p>
+
+              <div id="form-errors" class="form-errors"></div>
+
+              <form id="contact-form" class="contact-form" novalidate>
+                <p class="required-note">Fields marked <span class="required-marker">*</span> are required.</p>
+
+                <div class="form-field">
+                  <span class="form-label">Full Name <span class="required-marker">*</span></span>
+                  <input type="text" class="form-input" id="field-name" name="name" autocomplete="name" />
+                </div>
+
+                <div class="form-field">
+                  <input type="email" class="form-input" id="field-email" name="email" placeholder="you@example.com" autocomplete="email" />
+                </div>
+
+                <div class="form-field">
+                  <span class="form-label">Phone Number</span>
+                  <input type="tel" class="form-input" id="field-phone" name="phone" autocomplete="tel" />
+                </div>
+
+                <div class="form-field">
+                  <label for="field-country" class="form-label">Country <span class="required-marker">*</span></label>
+                  <select id="field-country" name="country" class="form-select">
+                    <option value="">Select a country&hellip;</option>
+                    <option value="gb">United Kingdom</option>
+                    <option value="us">United States</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                    <option value="au">Australia</option>
+                    <option value="ca">Canada</option>
+                    <option value="nl">Netherlands</option>
+                    <option value="se">Sweden</option>
+                    <option value="no">Norway</option>
+                    <option value="ie">Ireland</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <fieldset class="radio-fieldset">
+                    <legend class="form-label">Enquiry Type <span class="required-marker">*</span></legend>
+                    <div class="radio-group">
+                      <label class="radio-label"><input type="radio" name="enquiry" value="general" /> General Enquiry</label>
+                      <label class="radio-label"><input type="radio" name="enquiry" value="project" /> Project Discussion</label>
+                      <label class="radio-label"><input type="radio" name="enquiry" value="support" /> Technical Support</label>
+                      <label class="radio-label"><input type="radio" name="enquiry" value="partnership" /> Partnership</label>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="form-field">
+                  <span class="form-label">Message <span class="required-marker">*</span></span>
+                  <textarea class="form-textarea" id="field-message" name="message" rows="6"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--lg contact-submit">Send Enquiry</button>
+              </form>
+            </div>
+
+            <div class="contact-info-col">
+              <div class="contact-details">
+                <h2 class="contact-details-heading">Our Office</h2>
+                <address class="contact-address">
+                  <p>Harlsoft Ltd<br />
+                  14 Innovation Quarter<br />
+                  Bristol, BS1 4QH<br />
+                  United Kingdom</p>
+                </address>
+                <dl class="contact-list">
+                  <dt>Email</dt>
+                  <dd><a href="mailto:hello@harlsoft.co.uk">hello@harlsoft.co.uk</a></dd>
+                  <dt>Phone</dt>
+                  <dd><a href="tel:+441173330000">+44 (0)117 333 0000</a></dd>
+                  <dt>Hours</dt>
+                  <dd>Monday &ndash; Friday, 9:00 &ndash; 17:30 GMT</dd>
+                </dl>
+              </div>
+
+              <div class="map-placeholder">
+                <img src="assets/images/map-placeholder.svg" alt="Map showing Harlsoft Ltd office location in Bristol city centre" />
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="site-footer">

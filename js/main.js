@@ -119,12 +119,92 @@
     };
   };
 
+  Harlsoft.initContactForm = function () {
+    var form = document.getElementById('contact-form');
+    var errorsEl = document.getElementById('form-errors');
+    var countrySelect = document.getElementById('field-country');
+
+    if (!form) return;
+
+    if (countrySelect) {
+      countrySelect.onchange = function () {
+        form.submit();
+      };
+    }
+
+    form.onsubmit = function (e) {
+      e.preventDefault();
+
+      var nameEl = document.getElementById('field-name');
+      var emailEl = document.getElementById('field-email');
+      var messageEl = document.getElementById('field-message');
+      var enquiryEls = form.querySelectorAll('input[name="enquiry"]');
+      var countryEl = document.getElementById('field-country');
+
+      var errors = [];
+
+      var fields = [nameEl, emailEl, messageEl, countryEl];
+      fields.forEach(function (el) {
+        if (el) {
+          el.classList.remove('form-input--error', 'form-select--error', 'form-textarea--error');
+        }
+      });
+
+      if (!nameEl || !nameEl.value.trim()) {
+        errors.push('Full Name is required.');
+        if (nameEl) nameEl.classList.add('form-input--error');
+      }
+
+      if (!emailEl || !emailEl.value.trim()) {
+        errors.push('Email address is required.');
+        if (emailEl) emailEl.classList.add('form-input--error');
+      }
+
+      if (!countryEl || !countryEl.value) {
+        errors.push('Country is required.');
+        if (countryEl) countryEl.classList.add('form-select--error');
+      }
+
+      var enquiryChecked = false;
+      enquiryEls.forEach(function (el) {
+        if (el.checked) enquiryChecked = true;
+      });
+      if (!enquiryChecked) {
+        errors.push('Please select an enquiry type.');
+      }
+
+      if (!messageEl || !messageEl.value.trim()) {
+        errors.push('Message is required.');
+        if (messageEl) messageEl.classList.add('form-textarea--error');
+      }
+
+      if (errors.length > 0) {
+        var list = '<ul>';
+        errors.forEach(function (err) {
+          list += '<li>' + err + '</li>';
+        });
+        list += '</ul>';
+        errorsEl.innerHTML = list;
+        errorsEl.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      } else {
+        errorsEl.innerHTML = '';
+        form.reset();
+        var confirmEl = document.createElement('p');
+        confirmEl.className = 'contact-confirm';
+        confirmEl.textContent = 'Thank you for your message. A member of our team will be in touch shortly.';
+        form.parentNode.insertBefore(confirmEl, form);
+        form.style.display = 'none';
+      }
+    };
+  };
+
   document.addEventListener('DOMContentLoaded', function () {
     Harlsoft.initNav();
     Harlsoft.initCarousel();
     Harlsoft.initModal();
     Harlsoft.initNewsletter();
     Harlsoft.initAccordion();
+    Harlsoft.initContactForm();
   });
 
 })();
