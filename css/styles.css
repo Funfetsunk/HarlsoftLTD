@@ -759,7 +759,7 @@ blockquote {
 
 .feature-card__title {
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: var(--text-lg);
   font-weight: var(--weight-bold);
   color: var(--colour-primary);
   line-height: var(--leading-tight);
