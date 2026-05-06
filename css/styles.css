@@ -4,7 +4,7 @@
  * Direction: cyberpunk megacorp UI
  * Palette: void blue + neon cyan/magenta
  * Display: Space Grotesk | Mono: JetBrains Mono | Body: Inter
- * NOTE: existing class names preserved — markup-level a11y bugs in HTML files retained
+ * Display: Orbitron | Mono: Roboto Mono | Body: Roboto
  */
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto:wght@300;400;500;700&family=Roboto+Mono:wght@400;500;600&display=swap');
@@ -409,7 +409,7 @@ blockquote {
 
 .form-input::placeholder,
 .form-textarea::placeholder {
-  color: var(--colour-muted);
+  color: #3d4d78;
 }
 
 .form-input:focus,
@@ -592,10 +592,8 @@ blockquote {
   :root { --gutter: var(--space-3); }
 }
 
-/* Focus reset (intentional bug retained — no visible focus indicator) */
 * { outline: none; }
 
-/* Skip link (intentional bug retained — hidden, never appears on focus) */
 .skip-link { display: none; }
 
 /* =========================================================
@@ -781,7 +779,7 @@ blockquote {
 .footer-col p {
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
-  color: var(--colour-muted);
+  color: #4c5c8a;
 }
 
 .footer-col ul {
@@ -814,7 +812,7 @@ blockquote {
   border-top: 1px solid var(--colour-border);
   padding-block-start: var(--space-6);
   font-size: var(--text-xs);
-  color: var(--colour-muted);
+  color: #4c5c8a;
   font-family: var(--font-mono);
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1223,17 +1221,16 @@ blockquote {
 }
 
 .btn--cta {
-  background-color: var(--colour-accent);
-  color: var(--colour-void);
-  border-color: var(--colour-accent);
-  box-shadow: var(--glow-magenta);
+  background-color: var(--colour-panel-2);
+  color: #3d7ab5;
+  border-color: #3d7ab5;
   white-space: nowrap;
 }
 
 .btn--cta:hover {
-  background-color: var(--colour-void);
-  border-color: var(--colour-accent);
-  color: var(--colour-accent);
+  background-color: #3d7ab5;
+  border-color: #3d7ab5;
+  color: var(--colour-void);
 }
 
 @media (max-width: 900px) {
@@ -1884,7 +1881,7 @@ blockquote {
   box-shadow: 0 0 0 1px var(--colour-error);
 }
 
-.contact-form .form-input::placeholder { color: var(--colour-muted); }
+.contact-form .form-input::placeholder { color: #3d4d78; }
 
 .radio-fieldset { border: none; padding: 0; margin: 0; }
 .radio-fieldset legend { margin-block-end: var(--space-3); }
