@@ -4,7 +4,7 @@
 
 This project is a **deliberately broken** generic corporate website built as a training and testing tool for accessibility testers. Every bug is intentional. The goal is to provide a realistic, multi-page web experience seeded with a known set of WCAG 2.2 Level A and AA failures for testers to identify.
 
-The site represents a fictional company: **Nexora Solutions** — a mid-size B2B software consultancy. It has enough real-world surface area (navigation, forms, data tables, modals, carousels, etc.) to make accessibility failures feel authentic rather than contrived.
+The site represents a fictional company: **Harlsoft Ltd** — a mid-size B2B software consultancy. It has enough real-world surface area (navigation, forms, data tables, modals, carousels, etc.) to make accessibility failures feel authentic rather than contrived.
 
 ---
 
