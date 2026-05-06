@@ -1,5 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40">
-  <rect width="36" height="36" rx="6" y="2" fill="#1a3a5c"/>
-  <text x="9" y="27" font-family="Arial, sans-serif" font-size="20" font-weight="800" fill="#e8a020">H</text>
-  <text x="46" y="28" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1a3a5c">harlsoft</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="32" viewBox="0 0 200 32">
+  <defs>
+    <linearGradient id="cyan-magenta" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00d4ff"></stop>
+      <stop offset="100%" stop-color="#ff2e88"></stop>
+    </linearGradient>
+  </defs>
+  
+  <path d="M2 6 L14 16 L2 26 L6 16 Z" fill="url(#cyan-magenta)"></path>
+  <path d="M16 6 L28 16 L16 26 L20 16 Z" fill="#00d4ff" opacity="0.6"></path>
+  
+  <text x="36" y="19" font-family="&#39;Space Grotesk&#39;, Arial, sans-serif" font-size="17" font-weight="700" fill="#e8ecff" letter-spacing="0.5">HARLSOFT</text>
+  
+  <text x="36" y="29" font-family="&#39;JetBrains Mono&#39;, monospace" font-size="7" font-weight="500" fill="#00d4ff" letter-spacing="1.5">// CORP ◆ SEC.04</text>
 </svg>
