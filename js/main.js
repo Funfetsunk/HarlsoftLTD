@@ -198,6 +198,27 @@
     };
   };
 
+  Harlsoft.initNewsSearch = function () {
+    var input = document.getElementById('news-search-input');
+    var grid = document.getElementById('news-grid');
+
+    if (!input || !grid) return;
+
+    var cards = grid.querySelectorAll('.news-card');
+
+    input.oninput = function () {
+      var query = input.value.toLowerCase();
+      cards.forEach(function (card) {
+        var titleEl = card.querySelector('.news-card__title');
+        var excerptEl = card.querySelector('.news-card__excerpt');
+        var titleText = titleEl ? titleEl.textContent.toLowerCase() : '';
+        var excerptText = excerptEl ? excerptEl.textContent.toLowerCase() : '';
+        var visible = titleText.indexOf(query) !== -1 || excerptText.indexOf(query) !== -1;
+        card.style.display = visible ? '' : 'none';
+      });
+    };
+  };
+
   document.addEventListener('DOMContentLoaded', function () {
     Harlsoft.initNav();
     Harlsoft.initCarousel();
@@ -205,6 +226,7 @@
     Harlsoft.initNewsletter();
     Harlsoft.initAccordion();
     Harlsoft.initContactForm();
+    Harlsoft.initNewsSearch();
   });
 
 })();

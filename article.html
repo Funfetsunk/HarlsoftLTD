@@ -20,7 +20,7 @@
               <li><a href="index.html" class="nav-link">Home</a></li>
               <li><a href="about.html" class="nav-link">About</a></li>
               <li><a href="services.html" class="nav-link">Services</a></li>
-              <li><a href="news.html" class="nav-link">News</a></li>
+              <li><a href="news.html" class="nav-link nav-link--active">News</a></li>
               <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
           </nav>
@@ -34,13 +34,160 @@
     </header>
 
     <main id="main-content">
-      <section class="section">
+
+      <article class="section">
         <div class="container">
-          <p><a href="news.html">&larr; Back to News</a></p>
-          <h1 style="margin-top: 1rem;">Article Title</h1>
-          <p style="color: var(--colour-text-secondary); margin-top: 0.5rem;">Coming in Phase 7</p>
+          <div class="article-layout">
+
+            <div class="article-main">
+
+              <nav class="article-breadcrumb">
+                <a href="news.html">&larr; Back to News &amp; Insights</a>
+              </nav>
+
+              <header class="article-header">
+                <div class="article-header__meta">
+                  <span class="news-card__category">Cloud Strategy</span>
+                  <span class="news-card__date">14 March 2024</span>
+                  <span class="article-header__read-time">8 min read</span>
+                </div>
+                <h1 class="article-header__title">The Future of Enterprise Cloud Migration: Lessons from the Front Line</h1>
+                <div class="article-header__byline">
+                  <span class="article-header__author">James Whitfield</span>
+                  <span class="article-header__role">Senior Cloud Consultant, Harlsoft Ltd</span>
+                </div>
+              </header>
+
+              <div class="article-featured-img">
+                <img src="assets/images/thumb-1.svg" alt="Abstract illustration representing cloud infrastructure and data flow" class="article-featured-img__img" />
+              </div>
+
+              <div class="article-body">
+
+                <p>Over the past three years, Harlsoft has guided more than forty enterprise organisations through cloud migration programmes of varying scale and complexity. The patterns that emerge from this body of work tell a story that vendor white papers rarely do: migration is as much a human challenge as a technical one, and the organisations that succeed are those that treat it accordingly.</p>
+
+                <p>This article draws on anonymised client engagements to explore the structural reasons why migrations stall, what separates a compelling business case from a shelved proposal, and the often-underestimated role of change management in determining long-term outcomes.</p>
+
+                <h4>Why Organisations Stall Mid-Migration</h4>
+
+                <p>The majority of failed or delayed migrations share a common characteristic: they were scoped as infrastructure projects rather than business transformation programmes. When the mandate sits entirely within the technology function, the organisation has effectively decided in advance to limit both the ambition and the authority of the programme.</p>
+
+                <p>Technical complexity is rarely the primary cause of delay. In our experience, stalled migrations are almost always attributable to one of three upstream failures:</p>
+
+                <ul>
+                  <li>Insufficient executive sponsorship — a programme champion who lacks the authority to unblock decisions at the organisational level</li>
+                  <li>Underestimated legacy dependency mapping — the true extent of interdependencies between systems is discovered mid-flight rather than during discovery</li>
+                  <li>Competing transformation initiatives that consume the same pools of skilled resource without formal prioritisation governance</li>
+                </ul>
+
+                <p>The third factor is particularly relevant in the current environment, where organisations are simultaneously managing cloud migration, data platform modernisation, and ERP refresh programmes. Without explicit prioritisation, teams fragment their attention and timelines slip across the board.</p>
+
+                <h4>Building a Business Case That Survives Contact With the Board</h4>
+
+                <p>A migration business case that leads with infrastructure cost savings will struggle to secure sustained board-level commitment. Boards authorise expenditure against business outcomes, not technology architectures. The most effective cases we have seen articulate three things clearly and early:</p>
+
+                <ol>
+                  <li><strong>The cost of inaction.</strong> What does remaining on the current platform cost the business in terms of risk exposure, engineering velocity, and competitive positioning over a five-year horizon?</li>
+                  <li><strong>The link between cloud capability and revenue growth.</strong> How does the target architecture enable the organisation to move faster, enter new markets, or serve customers in ways the current platform prohibits?</li>
+                  <li><strong>A credible, phased delivery model.</strong> Boards are risk-averse. A phased programme with clear value realisation milestones at each gate is far easier to approve than a multi-year big-bang commitment.</li>
+                </ol>
+
+                <p>One of our clients in the financial services sector — a mid-size asset manager — secured board approval for a three-year migration programme by framing phase one entirely around regulatory compliance risk reduction. The cost-saving narrative was positioned as a secondary benefit. This sequencing proved decisive.</p>
+
+                <blockquote class="article-blockquote">
+                  <p>"The board didn't buy a cloud migration. They bought a risk reduction programme that happened to deliver cloud infrastructure as its primary mechanism. The framing made all the difference."</p>
+                  <cite>— Programme Director, UK Financial Services (anonymised)</cite>
+                </blockquote>
+
+                <h4>The Role of Change Management</h4>
+
+                <p>Technology change programmes fail at the human layer with remarkable consistency. Engineers deliver working infrastructure; operational teams fail to adopt it; the promised efficiency gains do not materialise; the programme is declared a partial success and quietly filed away.</p>
+
+                <p>Effective change management in a cloud migration context is not primarily about training. It is about redesigning the operating model — the roles, responsibilities, decision rights, and feedback loops — that governs how technology is consumed and maintained after go-live. This work begins in discovery, not implementation.</p>
+
+                <p>As the management theorist and strategist Gérard Fouchard observed in a widely cited passage on organisational transformation: <span>"La transformation numérique n'est pas une destination, c'est un voyage permanent qui exige une capacité d'adaptation continue."</span> The sentiment holds: organisations that treat migration as a finite project with a defined end state consistently underperform against those that build adaptive capability into the programme from day one.</p>
+
+                <h4>What Successful Programmes Have in Common</h4>
+
+                <p>Across the engagements where we have seen genuinely strong outcomes — measured by adoption rates, operational cost reduction, and engineering velocity improvements — a set of consistent characteristics emerges:</p>
+
+                <ul>
+                  <li>A named executive sponsor with direct board access and a clear mandate to unblock</li>
+                  <li>A cloud centre of excellence established in parallel with the migration, not after it</li>
+                  <li>Dependency mapping completed before any workload is moved — however painful the discovery phase proves to be</li>
+                  <li>A "lighthouse" workload selected for phase one that is large enough to be meaningful, small enough to be low-risk, and owned by a team that is genuinely motivated to participate</li>
+                  <li>Regular executive reporting cadences that foreground business outcomes rather than migration velocity metrics</li>
+                </ul>
+
+                <p>None of these characteristics require exceptional technical skill. They require organisational discipline and leadership commitment — which, in practice, is considerably harder to sustain over a multi-year programme than any individual engineering challenge.</p>
+
+                <h4>Looking Ahead</h4>
+
+                <p>The next wave of enterprise cloud migration will be shaped by two forces that are already visible in early-adopter organisations: the maturation of FinOps as a discipline, and the growing pressure to design infrastructure with AI workload requirements in mind from the outset.</p>
+
+                <p>Organisations that complete their migrations in the next two to three years will find themselves in a structurally advantaged position to exploit both trends. Those that continue to delay — particularly those with significant on-premises legacy debt — will face a compounding disadvantage as the gap between cloud-native and legacy capabilities widens.</p>
+
+                <p>The window for organisations to make this transition on their own terms, rather than under duress, is narrowing. The lessons from the front line are clear: start earlier than feels comfortable, scope more broadly than the technology function alone can authorise, and treat the human transformation as seriously as the technical one.</p>
+
+              </div>
+
+              <div class="article-share">
+                <span class="article-share__label">Share this article</span>
+                <div class="article-share__buttons">
+                  <a href="#" class="article-share__btn">LinkedIn</a>
+                  <a href="#" class="article-share__btn">Twitter</a>
+                  <a href="#" class="article-share__btn">Copy link</a>
+                </div>
+              </div>
+
+            </div>
+
+            <aside class="article-sidebar">
+
+              <div class="sidebar-widget">
+                <h2 class="sidebar-widget__title">About the Author</h2>
+                <div class="sidebar-author">
+                  <p class="sidebar-author__name">James Whitfield</p>
+                  <p class="sidebar-author__bio">Senior Cloud Consultant at Harlsoft Ltd with over a decade of experience leading enterprise migration programmes across financial services, retail, and public sector.</p>
+                </div>
+              </div>
+
+              <div class="sidebar-widget">
+                <h2 class="sidebar-widget__title">Related Articles</h2>
+                <ul class="related-articles">
+                  <li class="related-article">
+                    <a href="article.html" class="related-article__link">
+                      <span class="related-article__title">FinOps in Practice: How to Stop Cloud Spend Spiralling Post-Migration</span>
+                      <span class="related-article__date">28 Feb 2024</span>
+                    </a>
+                  </li>
+                  <li class="related-article">
+                    <a href="article.html" class="related-article__link">
+                      <span class="related-article__title">Building a Cloud Centre of Excellence: A Practitioner's Guide</span>
+                      <span class="related-article__date">5 Jan 2024</span>
+                    </a>
+                  </li>
+                  <li class="related-article">
+                    <a href="article.html" class="related-article__link">
+                      <span class="related-article__title">Why Your Data Platform Strategy Should Come Before Your Cloud Migration</span>
+                      <span class="related-article__date">19 Nov 2023</span>
+                    </a>
+                  </li>
+                  <li class="related-article">
+                    <a href="article.html" class="related-article__link">
+                      <span class="related-article__title">Legacy Dependency Mapping: The Discovery Work Organisations Keep Skipping</span>
+                      <span class="related-article__date">3 Oct 2023</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </aside>
+
+          </div>
         </div>
-      </section>
+      </article>
+
     </main>
 
     <footer class="site-footer">
