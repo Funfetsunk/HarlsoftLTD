@@ -1284,3 +1284,149 @@ blockquote {
 .accordion__item--open .accordion__panel {
   display: block;
 }
+
+/* =========================================================
+   Services — Capability List
+   ========================================================= */
+
+.capability-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-8);
+}
+
+.capability-item {
+  display: flex;
+  gap: var(--space-5);
+  align-items: flex-start;
+}
+
+.capability-icon {
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background-color: var(--colour-primary);
+  color: var(--colour-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.capability-content {
+  flex: 1;
+}
+
+.capability-title {
+  font-size: var(--text-md);
+  font-family: var(--font-display);
+  font-weight: var(--weight-semibold);
+  color: var(--colour-primary);
+  margin-block-end: var(--space-2);
+}
+
+.capability-content p {
+  font-size: var(--text-sm);
+  color: var(--colour-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+@media (max-width: 1024px) {
+  .capability-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .capability-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================================================
+   Services — Pricing Table
+   ========================================================= */
+
+.table-wrapper {
+  overflow-x: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--colour-white);
+  font-size: var(--text-sm);
+}
+
+.pricing-table tr:not(:last-child) {
+  border-bottom: 1px solid var(--colour-border);
+}
+
+.pricing-table td {
+  padding: var(--space-4) var(--space-6);
+  vertical-align: middle;
+}
+
+.pricing-table__label-cell {
+  width: 28%;
+  background-color: var(--colour-surface);
+}
+
+.pricing-table__header-cell {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: var(--weight-bold);
+  color: var(--colour-primary);
+  background-color: var(--colour-surface);
+  width: 24%;
+  padding-block: var(--space-6);
+}
+
+.pricing-table__header-cell--featured {
+  background-color: #d4edda;
+}
+
+.pricing-table__feature {
+  font-weight: var(--weight-medium);
+  color: var(--colour-text);
+}
+
+.pricing-table__value {
+  text-align: center;
+  color: var(--colour-text-secondary);
+}
+
+.pricing-table__value--featured {
+  background-color: #d4edda;
+  color: var(--colour-text);
+}
+
+.pricing-table__period {
+  font-size: var(--text-xs);
+  color: var(--colour-muted);
+  margin-inline-start: 2px;
+}
+
+.pricing-table__cta {
+  text-align: center;
+  padding-block: var(--space-6);
+}
+
+.pricing-table__cta--featured {
+  background-color: #d4edda;
+}
+
+.pricing-table tr:nth-child(even) .pricing-table__feature,
+.pricing-table tr:nth-child(even) .pricing-table__value:not(.pricing-table__value--featured),
+.pricing-table tr:nth-child(even) .pricing-table__label-cell {
+  background-color: #fafbfd;
+}
+
+@media (max-width: 640px) {
+  .pricing-table td {
+    padding: var(--space-3) var(--space-4);
+  }
+}
