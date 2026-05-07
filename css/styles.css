@@ -1766,18 +1766,6 @@ blockquote {
   position: relative;
 }
 
-.pricing-table__header-cell--featured::after {
-  content: "// RECOMMENDED";
-  position: absolute;
-  top: var(--space-2);
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: var(--font-mono);
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
-  color: var(--colour-accent);
-  font-weight: var(--weight-medium);
-}
 
 .pricing-table__feature {
   font-family: var(--font-display);
